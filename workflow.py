@@ -66,7 +66,7 @@ source_config = PlayStoreScrapperConfig(
    countries=["in"],
    package_name="com.chess",
    # max_count=10000, # Number of reviews to fetch
-   lookup_period="12h"  # Lookup period from current time, format: `<number><d|h|m>` (day|hour|minute)
+   lookup_period="90d"  # Lookup period from current time, format: `<number><d|h|m>` (day|hour|minute)
 )
 
 # initialize play store reviews retriever
