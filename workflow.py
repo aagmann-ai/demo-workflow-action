@@ -8,10 +8,11 @@ from google.cloud.storage import Client
 from obsei.payload import TextPayload
 from obsei.sink.base_sink import BaseSinkConfig, Convertor, BaseSink
 from obsei.source.playstore_scrapper import PlayStoreScrapperConfig, PlayStoreScrapperSource
-
+from pydantic import PrivateAttr
 
 
 class GCSSinkConfig(BaseSinkConfig):
+    _client: Client = PrivateAttr()
     key_env_var: str = "GENAI_GCP_CREDENTIALS"
     bucket_name: str
     blob: str
