@@ -1,1 +1,2 @@
 git+https://github.com/obsei/obsei@master#egg=obsei[all,gpl]
+google-cloud-storage==1.38.0

@@ -23,7 +23,6 @@ jobs:
 
       - name: Execure workflow
         env:
-          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
-          SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+          GENAI_GCP_CREDENTIALS: ${{ secrets.GENAI_GCP_CREDENTIALS }}
         run: |
           python workflow.py
